@@ -7,7 +7,8 @@ public class AppValidator {
     private static final double TEMPERATURE_TOP_LIMIT = 35;
 
     public String validateTemperature(double temperature) throws TemperatureException {
-        if (Double.isNaN(temperature)) { return "Please restart and try again.";}
+        if (Double.isNaN(temperature)) { return ("Invalid input. Temperature should be in number format."
+                + "\nPlease restart and try again.");}
 
         else if (temperature >= TEMPERATURE_BOTTOM_LIMIT
                 & temperature <= TEMPERATURE_TOP_LIMIT) {

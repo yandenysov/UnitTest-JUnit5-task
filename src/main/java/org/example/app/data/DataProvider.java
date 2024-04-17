@@ -14,7 +14,6 @@ public class DataProvider {
             temperature = scanner.nextDouble();
             return temperature;
         } catch (InputMismatchException e) {
-            System.out.println("Invalid input. Temperature should be in number format.");
             return Double.NaN;
         }
     }
